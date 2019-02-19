@@ -1,0 +1,33 @@
+<div class="box-body">
+<table class="table">
+    <thead>
+        <tr>
+        <th>Nome</th>
+        <th>Mês</th>
+        <th>Ano</th>
+        <th>Ações</th>
+    </tr>
+    </thead>
+
+    <tbody>
+        <tr ng-repeat="billingCycle in bcCtrl.billingCycles">
+            <td>{{billingCycle.name}}</td>
+            <td>{{billingCycle.month}}</td>
+            <td>{{billingCycle.year}}</td>
+            <td class="table-actions">
+                <button ng-click="bcCtrl.showUpdate(billingCycle)" class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                <button ng-click="bcCtrl.showDelete(billingCycle)" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>
+            </td>
+        </tr>
+
+    </tbody>
+    
+   
+
+</table>
+we
+<div class="box-footer clearfix">
+    <paginator url="/#!/cadastro" pages="3"></paginator>
+</div>
+
+</div>
