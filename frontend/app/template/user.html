@@ -1,0 +1,28 @@
+
+    <!-- User Account: style can be found in dropdown.less -->
+    <li class="dropdown user user-menu " ng-controller="AuthCtrl as auth"">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+        <img src="/assets/img/about.jpg" class="user-image" alt="User Image">
+        <span class="hidden-xs">{{:: auth.getUser().name}}</span>
+      </a>
+      <ul class="dropdown-menu">
+        <!-- User image -->
+        <li class="user-header">
+          <img src="/assets/img/about.jpg" class="img-circle" alt="User Image">
+            <p>
+                {{:: auth.getUser().name}}
+                <small>{{:: auth.getUser().email}}</small>
+            </p>
+          
+        </li>
+       
+        <!-- Menu Footer-->
+        <li class="user-footer">
+          
+          <div class="pull-right">
+            <a href="#" class="btn btn-default btn-flat" ng-click="auth.logout()">Sair</a>
+          </div>
+        </li>
+      </ul>
+    </li>
+   

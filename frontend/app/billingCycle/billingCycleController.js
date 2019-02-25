@@ -13,6 +13,7 @@
         const url= "http://localhost:3003/api/billingCycles";
         let page= location.search().page || 1;
         const numberPerPage= 5;
+    
        
         vm.refresh= function(){
            
